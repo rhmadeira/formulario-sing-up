@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Formulário Sign Up</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <form class="form" action="./">
+      <h1>
+        Sign up
+      </h1>
+      <div class="names">
+        <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+      </div>
+
+      <input type="text" id="userName" name="userName" placeholder="User Name" required>
+      <input type="email" id="email" name="email" placeholder="Email Address" required>
+
+      <div class="password">
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <input type="password" id="passwordConfirm" name="passwordConfirm" placeholder="Confirm Password" required>
+      </div>
+
+      <div class="terms">
+        <input type="checkbox" name="termos" id="termos">
+        <label for="termos"><a href="/">Terms and Conditions</a></label>
+      </div>
+
+      <div class="btn">
+      <button>Register</button>
+      <a href="./login.html">Sing In</a>
+      </div>
+
+    </form>
+
+  </div>
+</body>
+
+</html>
