@@ -42,6 +42,11 @@ form input{
   border: 1px solid #ccc;
   font-size: 1rem;
   font-family: Arial, Helvetica, sans-serif;
+  transition: 0.4s;
+
+}
+form input:hover{
+  border: 1px solid rgb(57, 57, 57);
 }
 .names,
 .password{
@@ -58,15 +63,13 @@ form input{
   border-radius: 5px;
   margin: 20px 0;
 }
-
 .btn{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-
 .btn a{
-  background-color: rgb(17, 135, 17);
+  background-color: rgb(20, 136, 20);
   color: white;
   border: 1px solid rgb(61, 61, 61);
   border-radius: 5px;
@@ -75,6 +78,7 @@ form input{
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  transition: 0.4s;
 }
 .btn button{
   font-size: 1rem;
@@ -83,9 +87,34 @@ form input{
   border: 1px solid rgb(61, 61, 61);
   background-color: rgb(55, 126, 241);
   color: white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.btn button:hover{
+  background-color: rgb(15, 100, 237) ;
+}
+.btn a:hover{
+  background-color: rgb(5, 95, 5);
 }
 
-/* .names input, 
-.password input{
+@media (max-width: 600px){
+  .container{
+    max-width: 300px;
+  }
+  .names,
+  .password{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .terms::after{
+    margin-bottom: 10px;
+  }
 
-} */
+}
+
+@media (max-width: 300px){
+  .container{
+    max-width: 260px;
+  }
+}
